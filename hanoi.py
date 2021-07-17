@@ -2,7 +2,7 @@ from flask import Flask, flash, redirect, render_template, request, session
 
 app = Flask(__name__)
 
-@app.route("/", methods=["POST"])
+@app.route("/", methods=["GET", "POST"])
 def index():
 	size = request.form["size"]
 	src = dest = aux = [];
@@ -12,7 +12,7 @@ def index():
 	
 	print(hanoi(size, src, dest, aux))
 	
-	return render_template("hanoi.html")
+	return render_template("index.html")
 
 def hanoi(disk, src, dest, aux):
 	if disk == 1:
