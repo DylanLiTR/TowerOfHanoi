@@ -2,8 +2,12 @@ from flask import Flask, flash, redirect, render_template, request, session
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/")
 def index():
+	return render_template("index.html")
+
+@app.route("/", methods=["POST"])
+def prep():
 	size = request.form["size"]
 	src = dest = aux = [];
 	
@@ -11,8 +15,6 @@ def index():
 		src.append(size - layer)
 	
 	print(hanoi(size, src, dest, aux))
-	
-	return render_template("index.html")
 
 def hanoi(disk, src, dest, aux):
 	if disk == 1:
