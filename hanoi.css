@@ -1,0 +1,38 @@
+html {
+	text-align: center;
+	font-size: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#solve {
+	margin-top: 6px;
+	padding: 3px 12px;
+	font-size: 16px;
+	background-color: lightgreen;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+#sim {
+	margin-top: 6px;
+	border: 1px solid black;
+}
+
+#error {
+	margin: 6px 0;
+	color: red;
+}
+
+#speed {
+	padding: 4px 0;
+	font-size: 16px;
+}
+
+input[type="number"] {
+	height: 24px;
+	width: 96px;
+	font-size: 16px;
+}

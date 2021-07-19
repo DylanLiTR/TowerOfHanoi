@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<htnl lang="en">
+	
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Tower of Hanoi Solver</title>
+		<script src="hanoi.js"></script>
+		<link rel="stylesheet" href="hanoi.css">
+		
+	</head>
+	
+	<body>
+		
+		<h1>Tower of Hanoi</h1>
+		
+		<form>
+		
+			<label for="size">Number of Layers:</label>
+			<input type="number" min="1" max="9" id="size" name="size">
+			
+			<br>
+			
+			<p id="error"></p>
+			
+			<button id="solve">Run</button>
+			<select id="speed">
+				<option value="1">1x</option>
+				<option value="1.5">1.5x</option>
+				<option value="2">2x</option>
+				<option value="4">4x</option>
+				<option value="8">8x</option>
+			</select>
+		
+		</form>
+		
+		<canvas id="sim"></canvas>
+		
+	</body>
+	
+</htnl>
