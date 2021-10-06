@@ -49,7 +49,7 @@ function run() {
 	hanoi(size, towers, rect);
 }
 
-// recursize solving algorithm
+// recursive solving algorithm
 async function hanoi(disk, towers, rect, move) {
 	// set the solving speed
 	var delay = document.getElementById("speed").value;
